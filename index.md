@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="hero-section">
-  <h1 class="hero-title">Math Journal</h1>
+  <h1 class="hero-title">Covering space</h1>
   <p class="hero-subtitle">A collection of mathematical explorations, proofs, and insights</p>
   <p class="hero-description">
     Welcome to my personal mathematics journal. Here I document my journey through various mathematical 
