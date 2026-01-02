@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3"
 gem "jekyll-feed", "~> 0.15"
 gem "jekyll-sitemap", "~> 1.4"
-gem "minima", "~> 2.5"
+# gem "minima", "~> 2.5"  # Removed - using custom layout
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

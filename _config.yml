@@ -1,8 +1,8 @@
 # Site settings
 title: Math Journal
 description: A personal mathematics journal and portfolio
-url: "" # Your GitHub Pages URL will go here (e.g., https://username.github.io)
-baseurl: "" # Leave empty if using username.github.io, otherwise use /repository-name
+url: "https://gmollo.github.io"
+baseurl: "/math-journal"
 
 # Build settings
 markdown: kramdown
@@ -26,8 +26,8 @@ navigation:
   - title: Posts
     url: /posts
 
-# Theme settings
-theme: minima
+# Theme settings (removed - using custom layout)
+# theme: minima
 
 # Exclude from processing
 exclude:

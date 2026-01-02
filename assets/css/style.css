@@ -7,9 +7,9 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
+  line-height: 1.7;
+  color: #2c3e50;
+  background-color: #fafafa;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -17,9 +17,11 @@ body {
 
 /* Header */
 .site-header {
+  background-color: #fff;
   border-bottom: 2px solid #e8e8e8;
   padding: 1.5rem 0;
   margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .site-header .wrapper {
@@ -34,10 +36,12 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #2c3e50;
+  letter-spacing: -0.5px;
 }
 
 .site-title:hover {
   color: #3498db;
+  transition: color 0.2s ease;
 }
 
 .site-nav {
@@ -60,6 +64,10 @@ body {
 .page-content {
   min-height: 60vh;
   margin-bottom: 3rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 /* Posts */
@@ -93,10 +101,12 @@ body {
 }
 
 .category-tag {
-  background-color: #e8e8e8;
-  padding: 0.2rem 0.6rem;
-  border-radius: 3px;
+  background-color: #e8f4f8;
+  color: #2c3e50;
+  padding: 0.3rem 0.7rem;
+  border-radius: 12px;
   font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .post-content {
@@ -141,16 +151,25 @@ body {
   background-color: #f4f4f4;
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
-  font-family: 'Courier New', monospace;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Courier New', monospace;
   font-size: 0.9em;
+  color: #e83e8c;
 }
 
 .post-content pre {
-  background-color: #f4f4f4;
-  padding: 1rem;
-  border-radius: 5px;
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1.5rem;
+  border-radius: 8px;
   overflow-x: auto;
   margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.post-content pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
 }
 
 .post-content pre code {
@@ -160,15 +179,39 @@ body {
 
 .post-content blockquote {
   border-left: 4px solid #3498db;
-  padding-left: 1rem;
-  margin-left: 0;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background-color: #f8f9fa;
+  border-radius: 4px;
   color: #555;
   font-style: italic;
+}
+
+.post-content a {
+  color: #3498db;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.post-content a:hover {
+  border-bottom-color: #3498db;
 }
 
 /* Math rendering */
 .MathJax {
   font-size: 1.1em;
+}
+
+/* Display math should have some spacing */
+.post-content .MathJax-display {
+  margin: 1.5em 0;
+  padding: 0.5em 0;
+}
+
+/* Inline math styling */
+.post-content .MathJax {
+  padding: 0 0.2em;
 }
 
 /* Post navigation */
@@ -201,6 +244,31 @@ body {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #2c3e50;
+}
+
+.page-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.page-content ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.page-content ul li:last-child {
+  border-bottom: none;
+}
+
+.page-content ul li a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.page-content ul li a:hover {
+  color: #3498db;
 }
 
 /* Posts list */
@@ -239,12 +307,14 @@ body {
 
 /* Footer */
 .site-footer {
+  background-color: #fff;
   border-top: 2px solid #e8e8e8;
   padding: 2rem 0;
   margin-top: 3rem;
   text-align: center;
   color: #777;
   font-size: 0.9rem;
+  border-radius: 8px 8px 0 0;
 }
 
 /* Responsive */

@@ -10,7 +10,7 @@ This is my personal mathematics journal where I document mathematical exploratio
 ## Recent Posts
 
 {% for post in site.posts limit:5 %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+- **[{{ post.title }}]({{ post.url }})** - {{ post.date | date: "%B %d, %Y" }}
 {% endfor %}
 
 [View all posts →](/posts)
