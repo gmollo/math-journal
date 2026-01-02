@@ -1,0 +1,41 @@
+# Site settings
+title: Math Journal
+description: A personal mathematics journal and portfolio
+url: "" # Your GitHub Pages URL will go here (e.g., https://username.github.io)
+baseurl: "" # Leave empty if using username.github.io, otherwise use /repository-name
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Kramdown settings for math
+kramdown:
+  math_engine: mathjax
+  math_engine_opts:
+    preview: true
+    preview_as_code: true
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Posts
+    url: /posts
+
+# Theme settings
+theme: minima
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
