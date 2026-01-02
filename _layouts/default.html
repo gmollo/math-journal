@@ -28,11 +28,13 @@
     <header class="site-header">
       <div class="wrapper">
         <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        {% unless page.url == '/' %}
         <nav class="site-nav">
-          {% for item in site.navigation %}
-            <a class="page-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-          {% endfor %}
+          <a class="page-link" href="{{ '/' | relative_url }}">Home</a>
+          <a class="page-link" href="{{ '/posts' | relative_url }}">Posts</a>
+          <a class="page-link" href="{{ '/about' | relative_url }}">About</a>
         </nav>
+        {% endunless %}
       </div>
     </header>
 
