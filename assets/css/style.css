@@ -34,6 +34,8 @@ body {
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
 }
 
 /* Header */
@@ -41,12 +43,13 @@ body {
   background-color: var(--bg-primary);
   border-bottom: 1px solid var(--border-color);
   padding: 1.25rem 0;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   position: sticky;
   top: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
 }
 
 .site-header .wrapper {
@@ -56,7 +59,7 @@ body {
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
 }
 
 .site-title {
@@ -111,17 +114,17 @@ body {
   width: 100%;
 }
 
-/* Main content */
-.page-content {
+/* Main content container */
+body > main.page-content {
   min-height: 60vh;
-  margin-bottom: 4rem;
+  margin: 3rem auto 4rem;
   background-color: var(--bg-primary);
-  padding: 3rem;
+  padding: 3.5rem;
   border-radius: 16px;
   box-shadow: var(--shadow-md);
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: calc(100% - 4rem);
+  box-sizing: border-box;
 }
 
 /* Posts */
@@ -432,6 +435,16 @@ body {
   color: var(--text-muted);
   font-size: 0.9rem;
   border-radius: 16px 16px 0 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.site-footer .wrapper {
+  max-width: 100%;
+  padding: 0 2.5rem;
 }
 
 /* Home page specific */
@@ -457,13 +470,12 @@ body {
 @media (max-width: 768px) {
   body {
     font-size: 16px;
-    padding: 0 1rem;
   }
 
   .site-header .wrapper {
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 
   .site-nav {
@@ -473,8 +485,19 @@ body {
   }
 
   .page-content {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
     border-radius: 12px;
+    margin: 2rem 1rem 3rem;
+    width: calc(100% - 2rem);
+  }
+
+  .site-footer {
+    margin: 3rem 1rem 0;
+    width: calc(100% - 2rem);
+  }
+
+  .site-footer .wrapper {
+    padding: 0 1.5rem;
   }
 
   .post-title,
