@@ -7,6 +7,7 @@ baseurl: "/math-journal"
 # Build settings
 markdown: kramdown
 future: true
+timezone: America/New_York
 plugins:
   - jekyll-feed
   - jekyll-sitemap
