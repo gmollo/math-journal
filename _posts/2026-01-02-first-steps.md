@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Real and Complex Analysis Study"
+title: "First steps"
 date: 2026-01-02
 published: true
 categories: [Introduction]
