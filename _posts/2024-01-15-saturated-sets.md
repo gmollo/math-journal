@@ -42,14 +42,20 @@ Let $C$ be a saturated set, then:
 
 $$C = \pi^{-1}(\pi(C)) = \pi^{-1}(\pi(C))$$
 
-Thus if $C$ is open, so is its projection. This holds similarly for closed sets.
 
-## Intuition
+## Nonexample
+We have seen that quotient maps restricted to saturated sets are also open when restricted to saturated sets. This is because any open saturated set is exactly the preimage of its projection, and thus its projection must be open by the quotient propoerty. 
 
-Intuitively, this is a way to get some of the nice properties of bijection without needing bijections.
+A quotient map q is open if and only if for every open set $U\subset X$ the saturation $\hat{U} = \pi^{-1}\pi(U)$ is open. 
 
-## Example
+Proof: 
+Suppose the saturation of each open set is open. Let A be any open set in X 
+$\pi(A) = \pi(\hat{A})$. Since $\hat{A}$ is assumed to be open as a saturation of an open set, and hte image of an open saturated set is open, $\pi(A)$ is open for any open A. 
 
-**Example:** Find a quotient map which is not open.
+We have shown that if the saturation of any open set is open, then a quotient map is open, we now show that if the saturation of any open set is not open, then then $\pi$ fails to be an open map. 
 
-It is easiest to think about discrete cases to avoid enumerating over classes. Additionally, we can think about the above fact and conclude that any domain which contains sets that are not saturated will fail to be open and closed on those sets. This means we need only a non-injective quotient map. Let $f$ be the map $x^2$ with the usual topology on domain and range.
+Suppose $\hat{U}$ is the saturation of an open set $U$ which is not open. Then by the definition of a quotient map, $\pi(U)$ is open iff the saturation of U is open, thus $\pi(U)$ is not open, and the map is not open. 
+
+This shows the utility of saturated sets within the context of quotient maps. Preimages of singletons, have the capacity to grow, and this is in general a property of sets and maps: 
+
+Let $A\subset X, f: X\mapsto Y$ then $A \subset f^{-1}f(A)$ if f is injective, then we hae equality in this property. Because we can restriact maps into their images, to create surjectivity, this is a very convenient way to to create bijections. 
