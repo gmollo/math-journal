@@ -5,12 +5,7 @@ title: Home
 
 <div class="hero-section">
   <h1 class="hero-title">Covering space</h1>
-  <p class="hero-subtitle">A collection of mathematical explorations, proofs, and insights</p>
-  <p class="hero-description">
-    Welcome to my personal mathematics journal. Here I document my journey through various mathematical 
-    concepts, work through proofs, solve interesting problems, and share my understanding of the beautiful 
-    world of mathematics.
-  </p>
+  <p class="hero-subtitle">Mathematical explorations, proofs, and insights</p>
 </div>
 
 <div class="recent-posts-section">
