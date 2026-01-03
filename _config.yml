@@ -6,6 +6,7 @@ baseurl: "/math-journal"
 
 # Build settings
 markdown: kramdown
+future: true
 plugins:
   - jekyll-feed
   - jekyll-sitemap
